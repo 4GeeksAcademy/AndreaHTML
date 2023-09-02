@@ -18,7 +18,7 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
       <div class="row" style="margin: 10px;">
        <strong>Payment Form</strong> 
       </div>
-      <div class="row" style=" margin:10px;border: 1px solid gray">
+      <div class="row alert alert-danger">
         some fields are missing
       </div>
       <!--(DIV 3)-->
@@ -31,16 +31,16 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
               <div class="col-sm-12 col-md-4">
 
                   <label for="">Card #</label>
-                  <input type="text" />
+                  <input type="text" class="form-control"/>
               
               </div>
               <div class="col-sm-12 col-md-4">
                   <label for="">CVC #</label> 
-                  <input type="text" />
+                  <input type="text" class="form-control"/>
               </div>
                 <div class="col-sm-12 col-md-4"> 
                 <label for=""><strong>$</strong>Amount</label> 
-                <input type="text" />
+                <input type="text" class="form-control"/>
               </div>
             </div>
         </div>
@@ -66,11 +66,11 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
             </div>
           </div>
 
-            <div class="col-md-6" style=">
+            <div class="col-md-6">
               
               <div style="margin: 5px;">
               
-                  <fieldset style="margin: 5px; border:">
+                  <fieldset style="margin: 5px; border:none">
                     <label for="">Last Name</label> 
                     <input type="text" class="form-control" />
                   </fieldset>
@@ -83,8 +83,8 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                           <fieldset
                               style="margin: 5px;">
                              
-                              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">State</label>
-                              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                              <label for="inlineFormCustomSelectPref">State</label>
+                              <select class="form-control" id="inlineFormCustomSelectPref">
                                 <option selected>Choose...</option>
                                 <option value="1">Florida</option>
                                 <option value="2">Miami</option>
@@ -100,8 +100,10 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                             </fieldset>
                           </div>
                           <div style="margin: 5px;">
-                            <fieldset>  Message</fieldset>
-                            <textarea></textarea>
+                            <fieldset>
+                              <label class="my-1 mr-2" for="">Message</label>
+                              <textarea class="form-control"></textarea>
+                            </fieldset>
                           </div>
                       </div>
                   </div>
